@@ -1,4 +1,7 @@
 // REVIEW CAROSEL
+
+
+// array - containing other people's infromation
 const persona = [
     {
         id: 1,
@@ -29,10 +32,6 @@ const persona = [
         description: "Welcome to my world. You will be greeted by the unexpected here and your mind will be challenged and expanded in ways that you never thought possible. That is if you are able to survive..."
     },
 ]
-
-
-// array - containing other people's infromation
-
 
 // select all html elements
 const img = document.querySelector('.image-container');              //persona's image
