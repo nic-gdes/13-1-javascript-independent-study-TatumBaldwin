@@ -46,7 +46,10 @@ const randomBtn = document.querySelector('.random-btn');
 let currentItem = 0;
 
 // Load the first person
-
+window.addEventListener("DOMContentLoaded", function(){
+    const item = persona[currentItem];
+    img.src = item.img;
+})
 
 // show person based on item present
 
