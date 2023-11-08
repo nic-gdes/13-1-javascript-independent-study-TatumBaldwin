@@ -35,7 +35,7 @@ const persona = [
 
 // select all html elements
 const img = document.querySelector('.img-swap');              //persona's image
-const name = document.querySelector('.name');                        //persona's name
+const personaName = document.querySelector('.name');                        //persona's name
 const title = document.querySelector('.title');                      //persona's title
 const description = document.querySelector('.description');         //persona's title description
 const prevBtn = document.querySelector('.prev-btn');                //previous button
@@ -43,12 +43,16 @@ const nxtBtn = document.querySelector('.next-btn');                    //nect bu
 const randomBtn = document.querySelector('.random-btn');                //random button
 
 // set starting item
-let currentItem = 0;
+let currentItem = 1;
 
 // Load the first person
 window.addEventListener('DOMContentLoaded', function(){
     const item = persona[currentItem];
-    img.src = persona[currentItem].img;
+    img.src = item.img;
+    personaName.textContent = item.personaName;
+    title.textContent = item.job;
+    description.textContent = item.jobDescription;
+
 });
 
 // show person based on item present
