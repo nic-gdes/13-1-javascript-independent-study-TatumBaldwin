@@ -79,3 +79,8 @@ prevBtn.addEventListener('click', function() {
 
 // Show a random person
 
+randomBtn.addEventListener('click', function() {
+    currentItem = Math.floor(Math.random() * persona.length)
+    console.log(currentItem)
+    showPerson(currentItem);
+})
