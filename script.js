@@ -66,7 +66,10 @@ nxtBtn.addEventListener('click', function() {
 })
 
 // Show previous person
-
+prevBtn.addEventListener('click', function() {
+    currentItem--
+    showPerson(currentItem);
+})
 
 // Show a random person
 
