@@ -43,7 +43,7 @@ const nxtBtn = document.querySelector('.next-btn');                    //nect bu
 const randomBtn = document.querySelector('.random-btn');                //random button
 
 // set starting item
-let currentItem = 4;
+let currentItem = 0;
 
 // Load the first person
 window.addEventListener('DOMContentLoaded', function(){
