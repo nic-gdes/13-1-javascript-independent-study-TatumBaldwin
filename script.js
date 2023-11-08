@@ -47,19 +47,23 @@ let currentItem = 1;
 
 // Load the first person
 window.addEventListener('DOMContentLoaded', function(){
-    const item = persona[currentItem];
+   showPerson(currentItem);
+});
+
+// show person based on item present
+function showPerson(person) {
+    const item = persona[person];
     img.src = item.img;
     personaName.textContent = item.personaName;
     title.textContent = item.job;
     description.textContent = item.jobDescription;
-
-});
-
-// show person based on item present
-
+}
 
 // Show next person
-
+nxtBtn.addEventListener('click', function() {
+    currentItem++
+    showPerson(currentItem);
+})
 
 // Show previous person
 
