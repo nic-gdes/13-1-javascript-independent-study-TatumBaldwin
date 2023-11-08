@@ -63,13 +63,13 @@ function showPerson(person) {
 nxtBtn.addEventListener('click', function() {
     currentItem++
     showPerson(currentItem);
-})
+});
 
 // Show previous person
 prevBtn.addEventListener('click', function() {
     currentItem--
     showPerson(currentItem);
-})
+});
 
 // Show a random person
 
