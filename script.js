@@ -61,14 +61,20 @@ function showPerson(person) {
 
 // Show next person
 nxtBtn.addEventListener('click', function() {
-    currentItem++
-    showPerson(currentItem);
+    currentItem++;
+    if(currentItem > persona.length - 1) {
+       currentItem = 0; 
+    }
+        showPerson(currentItem); 
 });
 
 // Show previous person
 prevBtn.addEventListener('click', function() {
-    currentItem--
-    showPerson(currentItem);
+    currentItem--;
+    if(currentItem < 0) {
+        currentItem = persona.length - 1;
+     }
+     showPerson(currentItem);
 });
 
 // Show a random person
